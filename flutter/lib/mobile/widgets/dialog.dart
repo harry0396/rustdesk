@@ -160,10 +160,11 @@ void showServerSettings(OverlayDialogManager dialogManager) async {
 void showServerSettingsWithValue(
     ServerConfig serverConfig, OverlayDialogManager dialogManager) async {
   var isInProgress = false;
-  final idCtrl = TextEditingController(text: serverConfig.idServer);
+  // 固定ID Server和key的值
+  final idCtrl = TextEditingController(text: '47.112.182.106');
   final relayCtrl = TextEditingController(text: serverConfig.relayServer);
   final apiCtrl = TextEditingController(text: serverConfig.apiServer);
-  final keyCtrl = TextEditingController(text: serverConfig.key);
+  final keyCtrl = TextEditingController(text: 'srEp+Tc3k6o5wr0dEd2FpQ2oZmrUexWQSKl8BBIm5No=');
 
   RxString idServerMsg = ''.obs;
   RxString relayServerMsg = ''.obs;
